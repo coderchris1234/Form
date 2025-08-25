@@ -1,0 +1,105 @@
+.input_body {
+  width: 100%;
+  height: 105vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  /* font-family: Roboto, "sans-serif"; */
+  align-items: center;
+}
+.input_wrapper {
+  width: 50%;
+  height: 90vh;
+  background: rgba(68, 66, 66, 0.15);
+  backdrop-filter: blur(10px);
+  /* background-color: white; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+}
+.input_wrapper > header {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header > p {
+  font-family: Roboto, "sans-serif";
+}
+p > span {
+  color: rgb(84, 199, 237);
+}
+.input {
+  width: 100%;
+  /* background-color: orange; */
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  /* margin-top: 20px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* align-items: center; */
+}
+.form_input {
+  width: 60%;
+  height: 70%;
+  /* background-color: pink; */
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* margin-top: px; */
+}
+.form_input > input {
+  padding: 10px;
+  border: none;
+  /* margin-bottom: 5px; */
+  border-bottom: 1px solid gray;
+  outline: none;
+  width: 70%;
+}
+.input_pass {
+  background-color: white;
+  width: 70%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+.input_pass > .password {
+  background-color: white;
+  height: 4vh;
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.input_con {
+  background-color: white;
+  width: 70%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+.input_con > .con_password {
+  /* background-color: orange; */
+  height: 4vh;
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.sign_up {
+  background-color: rgb(99, 195, 227);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 100px;
+}
