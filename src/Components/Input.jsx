@@ -10,7 +10,14 @@ const User_details = () => {
   //   Eye state
   const [seeEye, setSeeEye] = useState(false);
   const [C_seeEye, setCeye] = useState(true);
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    SetFirstName("");
+    SetLastName("");
+    SetLastName("");
+    setEmail("");
+    setUserName("");
+    setPassword("");
+    setConfirmPassword("");
     e.preventDefault();
     console.log(
       firstName,

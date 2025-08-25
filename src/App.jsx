@@ -5,7 +5,7 @@ import Login from "./Components/Login";
 function App() {
   return (
     <>
-      {/* <User_details /> */}
+      <User_details />
       <Login />
     </>
   );
