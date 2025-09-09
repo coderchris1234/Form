@@ -14,10 +14,10 @@ const User_details = () => {
   const [seeEye, setSeeEye] = useState(false);
   const [C_seeEye, setCeye] = useState(true);
   const handleSubmit = (e) => {
-    if(!userName){
-      alert('Please fill in the complete details')
-    } else{
+    if(userName && email){
       Navigate('/home')
+    } else{
+      alert("fill this form correctly")
     }
     SetFirstName("");
     SetLastName("");
@@ -42,7 +42,15 @@ const User_details = () => {
         <header>
           <h1>Sign Up</h1>
           <p>
-            Already a member? <NavLink to={'/login'}>Log In</NavLink>
+            Already a member? 
+            <NavLink 
+            style={{
+              textDecoration: "none",
+              cursor: "pointer",
+              color: "blue",
+              marginLeft: "8px"
+            }}
+            to={'/login'}>Log In</NavLink>
           </p>
         </header>
         <div className="input">
@@ -125,7 +133,12 @@ const User_details = () => {
             </div>
           </form>
           <button className="sign_up" type="submit">
-           <NavLink to={'/home'}>Sign Up</NavLink>
+           <NavLink
+           style={{
+            color: "white",
+            textDecoration: "none"
+           }}
+           to={'/home'}>Sign Up</NavLink>
           </button>
         </div>
       </div>

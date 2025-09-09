@@ -22,7 +22,10 @@ function App() {
         <Route path="*" element={<Error />}/>
       </Routes>
       <div>
-        <h1>Created By Christobel</h1>
+        <h1 style={{
+          color: "white",
+          textAlign: "center"
+        }}>Created with love 💝 By Christobel</h1>
       </div>
     </Router>
   ) 

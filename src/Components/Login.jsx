@@ -15,11 +15,19 @@ const Login = () => {
       alert("Please fill all fields")
     }
   };
+  const style ={
+    color: "lightGrey",
+    textDecoration: "none",
+    cursor: "pointer"
+    
+  }
 
   return (
     <div className="container">
       <h2>LOGIN IN</h2>
-      <NavLink to={'/sign-up'}>Don't have an account?</NavLink>
+      <NavLink 
+      style={style}
+      to={'/sign-up'}>Don't have an account?</NavLink>
       <form className="form_container" onSubmit={handleSubmit}>
         <input
           type="email"
@@ -50,7 +58,7 @@ const Login = () => {
         </button>
       </form>
       <div>
-        <NavLink to={'/forget-password'}>Forgot Password?</NavLink>
+        <NavLink style={style} to={'/forget-password'}>Forgot Password?</NavLink>
       </div>
     </div>
   );
