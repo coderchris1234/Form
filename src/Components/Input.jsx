@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate, NavLink } from "react-router-dom";
+
 import "./InputStyle.css";
 const User_details = () => {
+  const Navigate = useNavigate()
   const [firstName, SetFirstName] = useState("");
   const [lastName, SetLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,6 +14,11 @@ const User_details = () => {
   const [seeEye, setSeeEye] = useState(false);
   const [C_seeEye, setCeye] = useState(true);
   const handleSubmit = (e) => {
+    if(!userName){
+      alert('Please fill in the complete details')
+    } else{
+      Navigate('/home')
+    }
     SetFirstName("");
     SetLastName("");
     SetLastName("");
@@ -34,7 +42,7 @@ const User_details = () => {
         <header>
           <h1>Sign Up</h1>
           <p>
-            Already a member? <span>Log in</span>
+            Already a member? <NavLink to={'/login'}>Log In</NavLink>
           </p>
         </header>
         <div className="input">
@@ -42,6 +50,7 @@ const User_details = () => {
             action=" 
                 "
             className="form_input"
+            onSubmit={handleSubmit}
           >
             <input
               type="text"
@@ -115,8 +124,8 @@ const User_details = () => {
               </div>
             </div>
           </form>
-          <button className="sign_up" onClick={handleSubmit}>
-            Sign Up
+          <button className="sign_up" type="submit">
+           <NavLink to={'/home'}>Sign Up</NavLink>
           </button>
         </div>
       </div>
